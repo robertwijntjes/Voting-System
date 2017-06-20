@@ -1,0 +1,258 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.eryk.e_vote.RegisterActivity"
+    android:background="#ffffff">
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/reg_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/reg_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_reg_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/login_logo"/>
+
+
+
+
+<!-- //////////////////////////////////// PERSONAL INFORMATION //////////////////////////////////-->
+            <TextView
+                android:id="@+id/reg_headerPersonalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reg_headerPersonalInfo"
+                android:textAlignment="center"
+                android:layout_margin="30dp"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/reg_firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_firstName"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textSize="12sp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/reg_middleName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_middleName"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textSize="12sp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/reg_surname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_surName"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textSize="12sp"/>
+            </android.support.design.widget.TextInputLayout>
+
+<!-- //////////////////////////////////// ADDRESS INFORMATION //////////////////////////////////-->
+            <TextView
+                android:id="@+id/reg_headerAddressInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reg_headerAddressInfo"
+                android:textAlignment="center"
+                android:layout_margin="30dp"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+            <!-- Address line 1 -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/reg_addrFirstLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_addrFirstLine"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="1"
+                    android:textSize="12sp"/>
+            </android.support.design.widget.TextInputLayout>
+            <!-- Address line 2 -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/reg_addrSecondLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_addrSecondLine"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="1"
+                    android:textSize="12sp"/>
+            </android.support.design.widget.TextInputLayout>
+            <!-- Address line 3 -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/reg_addrThirdLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_addrThirdLine"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="1"
+                    android:textSize="12sp"/>
+            </android.support.design.widget.TextInputLayout>
+            <!-- Address line 4 (Postal Code) -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/reg_addrFourthLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_addrFourthLine"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="1"
+                    android:textSize="12sp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/reg_citySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+            </Spinner>
+            <Spinner
+                android:id="@+id/reg_countrySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+            </Spinner>
+
+<!-- //////////////////////////////////// CONTACT INFORMATION //////////////////////////////////-->
+            <TextView
+                android:id="@+id/reg_headerContactInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reg_headerContactInfo"
+                android:textAlignment="center"
+                android:layout_margin="30dp"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/reg_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textSize="12sp"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/reg_reEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_reEmail"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textSize="12sp"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/reg_phoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_phone"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:textSize="12sp"/>
+
+            </android.support.design.widget.TextInputLayout>
+<!-- //////////////////////////////////// ID INFORMATION //////////////////////////////////-->
+            <TextView
+                android:id="@+id/reg_headerIDInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reg_headerIDInfo"
+                android:textAlignment="center"
+                android:layout_margin="30dp"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+            <Button
+                android:id="@+id/reg_scanID_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/action_scan_id"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/reg_email_sign_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/action_sign_up_short"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reg_loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_login"
+                android:layout_marginTop="100dp"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

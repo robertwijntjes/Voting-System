@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">E-Vote</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_reEmail">Re-Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_rePassword">Re-Password</string>
+    <string name="prompt_firstName">First Name</string>
+    <string name="prompt_middleName">Middle Name</string>
+    <string name="prompt_surName">Surname</string>
+    <string name="prompt_addrFirstLine">First Line</string>
+    <string name="prompt_addrSecondLine">Second Line</string>
+    <string name="prompt_addrThirdLine">Third Line (Optional)</string>
+    <string name="prompt_addrFourthLine">Postal Code</string>
+    <string name="prompt_phone">Phone</string>
+
+    <string name="action_sign_up_short">Sign Up</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_scan_id">Scan Id</string>
+
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_email_match">Emails do not match</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_phone">Phone is invalid</string>
+    <string name="error_reg_failed">Registration Failed</string>
+
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="action_register">Register</string>
+    <string name="action_login">Login</string>
+
+    <string name="reg_headerPersonalInfo">Personal Information</string>
+    <string name="reg_headerAddressInfo">Address Information</string>
+    <string name="reg_headerContactInfo">Contact Information</string>
+    <string name="reg_headerIDInfo">Passport Information</string>
+
+    <string name="allowedPassword">0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM</string>
+
+    <string-array name="countryArray">
+        <item>Country</item>
+        <item>Austria</item>
+        <item>Belgium</item>
+        <item>Bulgaria</item>
+        <item>Croatia</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Denmark</item>
+        <item>Estonia</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Greece</item>
+        <item>Hungary</item>
+        <item>Ireland</item>
+        <item>Italy</item>
+        <item>Latvia</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Malta</item>
+        <item>Netherlands</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Romania</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Spain</item>
+        <item>Sweden</item>
+        <item>United Kingdom</item>
+    </string-array>
+    <string-array name="cityArray">
+        <item>City.. (To Be Done)</item>
+    </string-array>
+
+    <string name="parseID">99com3e95vote12sysDh289</string>
+    <string name="parseServer">http://comevote.herokuapp.com/parse/</string>
+
+    <!-- DATABASE -->
+    <string name="db_firstName">FirstName</string>
+    <string name="db_secondName">SecondName</string>
+    <string name="db_surname">Surname</string>
+    <string name="db_addrOne">AddrLineOne</string>
+    <string name="db_addrTwo">AddrLineTwo</string>
+    <string name="db_addrThree">AddrLineThree</string>
+    <string name="db_postalCode">PostalCode</string>
+    <string name="db_phoneNo">PhoneNo</string>
+    <integer name="db_pass_size">14</integer>
+
+
+</resources>
